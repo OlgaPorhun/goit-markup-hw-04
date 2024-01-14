@@ -98,12 +98,30 @@ address {
 .header-menu-link {
     padding-top: 24px;
     padding-bottom: 24px;
+    transition: color 250ms;
 }
 
 .header-menu-list:hover,
 .header-menu-list:focus {
     color: #404BBF;
 }
+
+.current {
+    position: relative;
+    color: #404BBF;
+}
+
+.current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background-color: #404BBF;
+    border-radius: 2px;
+    height: 4px;
+    width: 100%;
+}
+
 
 .header-address {
     font-style: normal;
@@ -119,6 +137,10 @@ address {
     gap: 40px;
 }
 
+.header-address-link {
+    transition: color cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .header-address-list:hover,
 .header-address-list:focus {
     color: #404BBF;
@@ -129,6 +151,11 @@ address {
 
 .hero {
    background-color: #2E2F42;
+   background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
    padding-top: 188px;
    padding-bottom: 188px;
 }
@@ -188,6 +215,18 @@ address {
 
 .feature-item {
     width: calc((100% - 24px * 3) / 4);
+}
+
+.container-future-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 112px;
+    border-radius: 4px;
+    border: 1px solid #8E8F99;
+    background: #F4F4FD;
+    margin-bottom: 8px;
 }
 
 .feature-item-title {
@@ -262,7 +301,34 @@ address {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
+
+.team-list-icon {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.team-item-icon {
+    width: 40px;
+    height: 40px;
+}
+.team-link-icon {
+    background-color: #4D5AE5;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 250ms;
+}
+
+.team-link-icon:hover {
+    background-color: #404BBF;
+    transition: color cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /*_______________________________*/
 
 /* _____________OUR PORTFOLIO______________ */
@@ -354,4 +420,42 @@ address {
     letter-spacing: 0.02em;
     max-width: 264px;
 }
+
+.footer-title {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+}
+
+.footer-list-icon {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.footer-item-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-link-icon {
+    background-color: #4D5AE5;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 250ms;
+}
+
+.footer-link-icon:hover {
+    background-color: #31D0AA;
+    transition: color cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
 
