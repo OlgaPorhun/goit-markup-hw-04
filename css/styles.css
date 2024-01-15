@@ -193,6 +193,7 @@ address {
     padding: 16px 32px;
     border: none;
     border-radius: 4px;
+    transition: color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
@@ -322,11 +323,11 @@ address {
     align-items: center;
     justify-content: center;
     transition: color 250ms;
+    transition: color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-link-icon:hover {
     background-color: #404BBF;
-    transition: color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*_______________________________*/
@@ -397,6 +398,14 @@ address {
     padding-bottom: 100px;
 }
 
+.footer-container {
+    display: flex;
+}
+
+.container-footer-link {
+    margin-right: 120px;
+}
+
 .footer-link {
     color: #4d5ae5;
     font-family: "Raleway", sans-serif;
@@ -421,9 +430,15 @@ address {
     max-width: 264px;
 }
 
+.container-footer-icon {
+    display: flex;
+    flex-direction: column;
+}
+
 .footer-title {
     color: #FFF;
     font-size: 16px;
+    font-style: normal;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -450,12 +465,9 @@ address {
     align-items: center;
     justify-content: center;
     transition: color 250ms;
+    transition: color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link-icon:hover {
     background-color: #31D0AA;
-    transition: color cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
-
