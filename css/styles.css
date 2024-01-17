@@ -159,13 +159,13 @@ address {
    background-size: cover;
    padding-top: 188px;
    padding-bottom: 188px;
+   max-width: 1440px;
 }
 
 .hero-container {
     display: flex;
     align-items: center;
     flex-direction: column;
-    max-width: 1440px;
 }
 
 
@@ -484,7 +484,7 @@ address {
 .footer-list-icon {
     display: flex;
     justify-content: center;
-    gap: 24px;
+    gap: 16px;
 }
 
 .footer-item-icon {
